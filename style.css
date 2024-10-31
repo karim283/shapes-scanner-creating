@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  height: 100vh;
+  overflow: hidden;
+  color: white;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://img.freepik.com/premium-photo/red-blue-wall-with-white-cylinder-white-cylinder_763713-3617.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.55);
+  z-index: 1;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+h1 {
+  color: white;
+  max-width: 60vh;
+  margin: 10% 10% 0 10%;
+  font-size: 3em;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 1s ease forwards;
+}
+
+h4 {
+  color: rgb(224, 224, 224);
+  max-width: 60vh;
+  margin: 3% 10% 0 10%;
+  position: relative;
+  z-index: 2;
+  animation: fadeIn 4s ease forwards;
+  animation-delay: 0s;
+}
+div {
+  max-width: 60vh;
+  margin: 3% 10% 0 10%;
+  position: relative;
+  z-index: 2;
+}
+button {
+  width: 15vh;
+  height: 5vh;
+  border-radius: 10px;
+  border-style: solid;
+  cursor: pointer;
+  margin: 3% 10% 0 0;
+  position: relative;
+  z-index: 2;
+}
+.button1 {
+  background-color: rgb(255, 0, 0);
+  border-color: rgb(255, 0, 0);
+  color: white;
+}
+.button2 {
+  background-color: rgb(254, 254, 254);
+  border-color: rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
+}
