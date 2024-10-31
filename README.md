@@ -1,4 +1,3 @@
-#Shapes - Shape Your Designs with Us
 This project is a web-based tool designed for users to upload images, trace black lines within the images, and customize shape designs in an animated blob style. The tool allows users to see a preview of black-line shapes extracted from uploaded images and customize animated blobs by selecting shape types, colors, and animation settings.
 
 Table of Contents
